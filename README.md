@@ -9,7 +9,7 @@ This script only works for password-less keys. As the current purpose of the key
 
 *Place build-signed.sh in the root of your build environment
 
-*Run ./build-signed.sh <device1> <device2> ...
+*Run ./build-signed.sh device1 device2 ...
 
 ## Known issues
-<device>.json is not generated for OTA files, will fix soon
+device.json is not generated for OTA files, will fix soon
