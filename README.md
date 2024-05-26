@@ -2,15 +2,26 @@
 Script for creating a signing build environment
 
 ## Disclaimer
-This script only works for password-less keys
+This script only works for password-less keys (DO NOT SET A PASSWORD)
+
+*Works with crDroid 8.x+ or lineage19.1+*
 
 ## How to run
-Place the script in your root build directory
+1. Download the script in your root build directory and run it
 
-chmod +x create-signed-env.sh
+`wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-script/main/create-signed-env.sh`
 
-./create-signed-env.sh
+`chmod +x create-signed-env.sh`
 
-Enter info for certificate subject line and confirm
+`./create-signed-env.sh`
+
+2. Enter info for certificate subject line and confirm
+
+3. Hit enter to set no password for each certificate. **Cannot set a password to build inline with this method!**
+
+### Prep device tree (for other ROMs)
+In your device tree (or common device tree) add:
+
+`-include vendor/lineage-priv/keys/keys.mk`
 
 Build as usual!
