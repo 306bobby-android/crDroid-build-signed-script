@@ -1,15 +1,16 @@
 # crDroid-build-signed-script
-Build script for creating signed crDroid OTA packages
+Script for creating a signing build environment
 
 ## Disclaimer
-This script only works for password-less keys. As the current purpose of the keys is Google shenanigans, password isn't necessary
+This script only works for password-less keys
 
 ## How to run
-*Run the commands inside create_keys.txt to create your release-keys in ~/.android-certs (back up this directory to save your keys!)
+Place the script in your root build directory
 
-*Place build-signed.sh in the root of your build environment
+chmod +x create-signed-env.sh
 
-*Run ./build-signed.sh device1 device2 ...
+./create-signed-env.sh
 
-## Known issues
-device.json is not generated for OTA files, will fix soon
+Enter info for certificate subject line and confirm
+
+Build as usual!
