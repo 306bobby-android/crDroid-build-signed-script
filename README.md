@@ -2,7 +2,7 @@
 Script for creating a signing build environment
 
 ## Disclaimer
-This script only works for password-less keys (DO NOT SET A PASSWORD)
+This script only works for password-less keys (DO NOT SET A PASSWORD) *This is due to building inline, other steps are necessary for a password*
 
 *Works with crDroid 8.x+ or lineage19.1+*
 
