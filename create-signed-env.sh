@@ -37,7 +37,7 @@ done
 
 
 ## Create vendor for keys
-mkdir vendor/lineage-priv
+mkdir -p vendor/lineage-priv
 mv ~/.android-certs vendor/lineage-priv/keys
 echo "PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/releasekey" > vendor/lineage-priv/keys/keys.mk
 cat <<EOF > vendor/lineage-priv/keys/BUILD.bazel
