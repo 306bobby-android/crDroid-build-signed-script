@@ -22,6 +22,6 @@ This script only works for password-less keys (DO NOT SET A PASSWORD) *This is d
 ### Prep device tree (for other ROMs)
 In your device tree (or common device tree) add:
 
-`-include vendor/lineage-priv/keys/keys.mk`
+`include vendor/lineage-priv/keys/keys.mk`
 
 Build as usual!
