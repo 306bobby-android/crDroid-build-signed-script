@@ -51,6 +51,6 @@ filegroup(
 )
 EOF
 
-echo "Done! Now build as usual. If builds aren't being signed, add '-include vendor/lineage-priv/keys/keys.mk' to your device mk file"
+echo "Done! Now build as usual. If builds aren't being signed, add 'include vendor/lineage-priv/keys/keys.mk' to your device mk file"
 echo "Make copies of your vendor/lineage-priv folder as it contains your keys!"
 sleep 3
